@@ -1,0 +1,18 @@
+<h1> Our current users </h1>
+
+<form action="<%= users_path %>" method="POST">
+  <label for="name">Name:</label>
+  <input id="name" type="text" name="user[username]" placeholder="Enter Username" value="<%= @user.username %>">
+  <input type="submit" value="Create User">
+</form>
+
+<div id="first_div">
+  <ul class="list">
+    <% @users.each_with_index do |user, i| %>
+    <div>
+      <p id="color"><%= "#{user.username}, id #{user.id.to_s}" %></p>
+      <%= button_to 'Delete', user_path(user), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete-button' %>
+    </div>
+    <% end %>
+  </ul>
+</div>

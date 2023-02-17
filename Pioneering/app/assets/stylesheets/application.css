@@ -1,0 +1,101 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+   background-color: lightslategrey;
+ }
+
+ h1 {
+   display: flex;
+   justify-content: center;
+   border-bottom: 300px;
+   border-radius: 20px;
+   font-family: Arial;
+   font-size: 50px;
+   background-color: rgb(255, 255, 255);
+   width: fit-content; 
+   margin-left: 750px;
+ }
+
+ #color {
+   /* display: inline-block; */
+   text-align: center;
+   font-size: 35px;
+   font-family: Arial; 
+   border: 5px solid black; /* set border */
+   border-radius: 20px;
+   padding: 10px; /* add padding */
+   margin: 10px; /* add margin */
+   background-color: black;
+   color: rgb(255, 255, 255);
+   border-style: dotted;
+ }
+
+ #first_div, #artworks_div {
+   text-align: center;
+ }
+
+.list, .artworks_list {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+input[type=text] {
+   width: 25%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: 2px solid #ccc;
+   border-radius: 10px;
+   background-color: #f8f8f8;
+   font-size: 16px;
+   resize: none;
+ }
+
+ input[type="submit"] {
+   
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ 
+ input[type="submit"]:hover {
+   background-color: #357f39;
+ }
+
+ label[for="name"] {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 5px;
+   font-size: 30px;
+ }
+
+ .delete-button {
+   background-color: #f44336;
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   margin-left: 10px;
+   cursor: pointer;
+ }
+
+
+
+

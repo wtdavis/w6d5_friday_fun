@@ -1,0 +1,9 @@
+<h1><%= "User #{params[:user_id]}'s art"%></h1>
+<div id = 'artworks_div'>
+    <ul class = 'artworks_list'> 
+        <% @artworks.each_with_index do |artwork, i| %>
+            <!--%= "User #{i + 1}"  %-->
+            <p id = 'color' ><%= "#{artwork.title}, id #{artwork.id.to_s}" %></p>
+        <% end %>
+    </ul>
+</div>

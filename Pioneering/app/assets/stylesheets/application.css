@@ -35,13 +35,13 @@
    text-align: center;
    font-size: 35px;
    font-family: Arial; 
-   border: 5px solid black; /* set border */
+   border: 1px solid black; /* set border */
    border-radius: 20px;
    padding: 10px; /* add padding */
    margin: 10px; /* add margin */
    background-color: black;
    color: rgb(255, 255, 255);
-   border-style: dotted;
+   /* border-style: dotted; */
  }
 
  #first_div, #artworks_div {

@@ -4,6 +4,9 @@
         <% @artworks.each_with_index do |artwork, i| %>
             <!--%= "User #{i + 1}"  %-->
             <p id = 'color' ><%= "#{artwork.title}, id #{artwork.id.to_s}" %></p>
+            <br>
+            <a href="<%redirect_to user_url(artwork.artist.id)%>">artist name <%={artwork.artist.username}%> </a>
+
         <% end %>
     </ul>
 </div>

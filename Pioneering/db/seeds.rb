@@ -24,3 +24,11 @@ end
         artist_id: (i)
     )
 end
+
+    11.times do |j|
+        ArtworkShare.create(
+        artwork_id: 11 - j, viewer_id: j
+    )
+
+    
+end
